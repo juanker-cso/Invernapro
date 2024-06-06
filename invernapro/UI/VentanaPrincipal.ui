@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VentanaPrincipal</class>
+ <widget class="QMainWindow" name="VentanaPrincipal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>971</width>
+    <height>773</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>DejaVu Sans</family>
+    <pointsize>16</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>InvernaPro</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" colspan="2">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Nuevo</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="cursor">
+           <cursorShape>ArrowCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="placeholder.qrc">:/plantvector/floral-2028345_640.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>false</bool>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QPushButton" name="pushButton_cultivo">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>120</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>DejaVu Sans</family>
+               <pointsize>18</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Nuevo cultivo</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_nombre">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>120</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>DejaVu Sans</family>
+               <pointsize>18</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Nuevo nombre común</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_metodo">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>120</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>DejaVu Sans</family>
+               <pointsize>18</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Nuevo método de propagación</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_lote">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>120</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>DejaVu Sans</family>
+               <pointsize>18</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Nuevo lote de reproducción</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Ver</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="4" column="1">
+         <widget class="QPushButton" name="pushButton_eliminar">
+          <property name="text">
+           <string>Eliminar</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="2">
+         <widget class="QTableWidget" name="tableWidget_busqueda">
+          <property name="font">
+           <font>
+            <family>DejaVu Sans Mono</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="QComboBox" name="comboBox_busqueda_clase">
+          <item>
+           <property name="text">
+            <string>Cultivos</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Nombres</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Métodos</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Lotes</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Plantas</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QPushButton" name="pushButton_seleccionar">
+          <property name="text">
+           <string>Seleccionar</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QFrame" name="frame_2">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>3</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>3</number>
+           </property>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="lineEdit_buscar_id">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_primaria">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;ID:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="2">
+         <widget class="QLabel" name="label_results">
+          <property name="font">
+           <font>
+            <family>DejaVu Sans</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Mostrando: </string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>971</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <widget class="QMenu" name="menuBusquedas">
+     <property name="title">
+      <string>Busquedas</string>
+     </property>
+     <addaction name="actionPlantas_por_nombre"/>
+     <addaction name="actionNombres_de_planta"/>
+     <addaction name="actionEn_temporada"/>
+     <addaction name="actionPlantas_de_variedad"/>
+    </widget>
+    <addaction name="menuBusquedas"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCulivos">
+   <property name="text">
+    <string>Cultivos</string>
+   </property>
+  </action>
+  <action name="actionNombres">
+   <property name="text">
+    <string>Nombres</string>
+   </property>
+  </action>
+  <action name="actionMetodos">
+   <property name="text">
+    <string>Métodos</string>
+   </property>
+  </action>
+  <action name="actionVer">
+   <property name="text">
+    <string>Ver</string>
+   </property>
+  </action>
+  <action name="actionPlantas_por_nombre">
+   <property name="text">
+    <string>Variedades por nombre</string>
+   </property>
+  </action>
+  <action name="actionNombres_de_planta">
+   <property name="text">
+    <string>Nombres de variedad</string>
+   </property>
+  </action>
+  <action name="actionEn_temporada">
+   <property name="text">
+    <string>En temporada</string>
+   </property>
+  </action>
+  <action name="actionPlantas_de_variedad">
+   <property name="text">
+    <string>Plantas de variedad</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>pushButton_cultivo</tabstop>
+  <tabstop>pushButton_nombre</tabstop>
+  <tabstop>pushButton_metodo</tabstop>
+  <tabstop>pushButton_lote</tabstop>
+  <tabstop>comboBox_busqueda_clase</tabstop>
+  <tabstop>lineEdit_buscar_id</tabstop>
+  <tabstop>tableWidget_busqueda</tabstop>
+ </tabstops>
+ <resources>
+  <include location="placeholder.qrc"/>
+ </resources>
+ <connections/>
+</ui>

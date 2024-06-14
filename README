@@ -1,0 +1,15 @@
+# InvernaPro
+
+This is the first version of a full desktop application originally conceived as an information system for a theoretical hybrid plant store + greenhouse business.
+
+# Current state
+The app can work out the basic features of registering plants: Identifying them by scientific name, plus cultivar name if applicable, and general information about the plant; such as preferred climate, sun and water regiment, seasons of growth, and temperature. And associating them with any number of common names. These names might also be interchanged with multiple plant species.
+
+Plants then can then be associated with propagation methods, the main focus of the software. A "propagation method" entry consists of the organ (part of the plant relevant to the method, such as seed, leaf or stem cutting) and notes detailing the particular process.
+
+The app was made with MySQL and python, with PyQT and QT Designer for UI development.
+
+# The future
+While amateurishly made and rushed out to meet a deadline, I now think of invernapro as a tool that could be useful for the houseplant community as a whole. Instead of aggregating information of varied trustworthiness from the internet, and strongly biased toward certain parts of the world. For example: putting a potted mint plant in a south facing window might be good advice in the US, not so much in Argentina.
+
+Instead, there needs to be an app that functions as a journal system for people to archive and catalogue their own experiences caring for their plants, wherever in the world they might be and however they might think of trying to do so. Concentrating and comparing this information to build more comprehensive and accurate guidelines for care in a variety of climates and locations around the world.
